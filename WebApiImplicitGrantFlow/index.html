@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebAPI Implicit Grant Flow with Google</title>
+</head>
+<body>
+    <h1>WebAPI Implicit Grant Flow with Google</h1>
+
+    <button id="btnUnsecure">Call service no auth</button>
+    <button id="btnLogin">Login with Google</button>
+    <button id="btnSecure">Call service with auth</button>
+    <pre id="result"></pre>
+    
+    <h2>Before using</h2>
+    <p>
+        Register the application at the <a href="https://console.developers.google.com/">Google Developers Console</a>
+        Copy the ClientId and ClientSecret from the OAuth settings under APIs & auth to the GoogleOAuth2AuthenticationOptions in Startup.cs
+    </p>
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>
